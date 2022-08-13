@@ -85,7 +85,8 @@ spec:
             fieldRef:
               apiVersion: v1
               fieldPath: metadata.name
-      dnsPolicy: ClusterFirst
+      #dnsPolicy: ClusterFirst
+      dnsPolicy: ClusterFirstWithHostNet
       serviceAccountName: contour
       securityContext:
         runAsNonRoot: true
